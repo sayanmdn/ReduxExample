@@ -14,10 +14,14 @@ class ReduxDemo extends Component {
         // Create Store (reducer, state)
         const store = createStore(reducer, "Peace")
 
-        store.subscribe(() => {
-            console.log("Now store is ", store.getState())
-        })
+        //to print the state of the store
+        console.log(store.getState())
+
+        // store.subscribe(() => {
+        //     console.log("Now state of store is ", store.getState())
+        // })
         store.dispatch({ type: "ATTACK", task: "Sayantan" })
+        console.log(store.getState())
 
         return (
             <div>
