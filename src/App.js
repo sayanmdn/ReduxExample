@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from './component'
-
+import ReduxDemo from './reduxDemo'
 
 class App extends Component {
   render() {
@@ -17,6 +17,10 @@ class App extends Component {
         </p>
         <div>
           <Header />
+        </div>
+        <br></br>
+        <div>
+          <ReduxDemo />
         </div>
       </div>
     );
