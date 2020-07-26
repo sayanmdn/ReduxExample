@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './component'
 import ReduxDemo from './reduxDemo'
+import ReduxDemo2 from './ReduxDemo2.js'
 
 class App extends Component {
   render() {
@@ -21,6 +22,10 @@ class App extends Component {
         <br></br>
         <div>
           <ReduxDemo />
+        </div>
+        <br></br>
+        <div>
+        <ReduxDemo2 />
         </div>
       </div>
     );
