@@ -13,7 +13,7 @@ const reducer = function (state, action) {
 const store = createStore(reducer, "oldState")
 
 //to print the state of the store
-console.log(store.getState())
+console.log('ReduxDemo2 ' + store.getState())
 
 // store.subscribe(() => {
 //     console.log("Now state of store is ", store.getState())
@@ -28,7 +28,7 @@ class ReduxDemo2 extends Component {
         return (
             <div>
                 Test ReduxDemo2
-                <p>Now state is {store.getState()}</p>
+                <p>Now state is ReduxDemo2: {store.getState()}</p>
             </div>
         )
     }
