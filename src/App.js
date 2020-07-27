@@ -4,6 +4,7 @@ import './App.css';
 import Header from './component'
 import ReduxDemo from './reduxDemo'
 import ReduxDemo2 from './ReduxDemo2.js'
+import reduxDemoCombine from './reduxDemoCombine'
 
 class App extends Component {
   render() {
@@ -26,6 +27,10 @@ class App extends Component {
         <br></br>
         <div>
         <ReduxDemo2 />
+        </div>
+        <br></br>
+        <div>
+          <reduxDemoCombine />
         </div>
       </div>
     );

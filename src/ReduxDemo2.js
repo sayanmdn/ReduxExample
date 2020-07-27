@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { combineReducers, createStore } from 'redux'
+import { createStore } from 'redux'
 
 //set Reducer (state, action)
 const reducer = function (state, action) {
@@ -33,10 +33,4 @@ class ReduxDemo2 extends Component {
         )
     }
 }
-
-class reduxDemoCombine extends Component {
-
-}
-
 export default ReduxDemo2
-
