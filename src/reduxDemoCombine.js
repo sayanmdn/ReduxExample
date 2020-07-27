@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 // import { combineReducers, createStore } from 'redux'
 
-class reduxDemoCombine extends Component {
+class ReduxDemoCombine extends Component {
     render() {
         return (
             <div>
@@ -10,6 +10,4 @@ class reduxDemoCombine extends Component {
         )
     }
 }
-
-export default reduxDemoCombine
-
+export default ReduxDemoCombine
