@@ -1,17 +1,8 @@
 import React, { Component } from 'react'
 import { combineReducers, createStore } from 'redux'
+import UserReducer from './reducers/userReducer'
+import ProductsReducer from './reducers/productReducers'
 
-function ProductsReducer(state=[], action) {
-    return state
-}
-function UserReducer (state='',action){
-    switch (action.type){
-        case 'newUser':
-            return action.payload
-        default : return state
-    }
-    // return state
-}
 const allReducers = combineReducers({
     products: ProductsReducer,
     user : UserReducer
