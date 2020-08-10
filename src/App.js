@@ -7,6 +7,8 @@ import ReduxDemo from './reduxDemo'
 import ReduxDemo2 from './ReduxDemo2.js'
 import ReduxDemoCombine from './reduxDemoCombine.js'
 // import { updateUser } from './actions/user-action'
+import Contact from './contact'
+import { Route, Link } from 'react-router-dom'
 class App extends Component {
 
   // constructor (props){
@@ -21,6 +23,7 @@ class App extends Component {
     // console.log(this.props)
     return (
       <div className="App">
+        <Route exact path='/contact' component={Contact}/>
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
@@ -38,8 +41,8 @@ class App extends Component {
         <br></br>
         <div>
           <ReduxDemo2 />
-      </div>
-      <br></br>
+        </div>
+        <br></br>
         <div>
           <ReduxDemoCombine />
         </div>
@@ -55,4 +58,4 @@ class App extends Component {
 //  onUpdateUser : updateUser
 // }
 export default App;
-// connect(mapStateToProps, mapActionsToProps) 
+// connect(mapStateToProps, mapActionsToProps)
