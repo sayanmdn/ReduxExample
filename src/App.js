@@ -23,7 +23,6 @@ class App extends Component {
     // console.log(this.props)
     return (
       <div className="App">
-        <Route exact path='/contact' component={Contact} />
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
             <h2>Welcome to React</h2>
@@ -34,8 +33,9 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <Route exact path='/contact' component={Contact} />
         <div>
-          <CounterApp />
+        <Route exact path='/counter' component={CounterApp} />
         </div>
         <br></br>
         <div>
