@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import { connect } from 'react-redux'
 import logo from './logo.svg';
 import './App.css';
-import Header from './component'
+import CounterApp from './component'
 import ReduxDemo from './reduxDemo'
 import ReduxDemo2 from './ReduxDemo2.js'
 import ReduxDemoCombine from './reduxDemoCombine.js'
@@ -23,16 +23,19 @@ class App extends Component {
     // console.log(this.props)
     return (
       <div className="App">
-        <Route exact path='/contact' component={Contact}/>
+        <Route exact path='/contact' component={Contact} />
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+            <h2>Welcome to React</h2>
+          <a href='http://localhost:3000'>
+            <code>Link to Home</code>
+          </a>
         </div>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <div>
-          <Header />
+          <CounterApp />
         </div>
         <br></br>
         <div>
